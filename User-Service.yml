@@ -4,5 +4,4 @@ server:
 spring:
   application:
     name: User-Service
-  config:
-    import: configserver:http://localhost:8090
+
