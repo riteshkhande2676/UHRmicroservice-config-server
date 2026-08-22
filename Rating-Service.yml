@@ -5,8 +5,3 @@ spring:
   application:
     name: Rating-Service
 
-eureka:
-   Client:
-     fetch-registry: true
-     register-with-eureka: true
-
