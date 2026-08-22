@@ -4,8 +4,7 @@ server:
 spring:
   application:
     name: API-GATEWAY
-  config:
-    import: configserver:http://localhost:8090
+
   cloud:
     gateway:
       server:
