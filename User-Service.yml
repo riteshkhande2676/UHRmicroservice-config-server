@@ -4,4 +4,8 @@ server:
 spring:
   application:
     name: User-Service
+ eureka:
+   Client:
+     fetch-registry: true
+     register-with-eureka: true
 
