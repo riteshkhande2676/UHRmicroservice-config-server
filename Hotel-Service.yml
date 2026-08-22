@@ -4,5 +4,4 @@ server:
 spring:
   application:
     name: Hotel-Service
-  config:
-    import: configserver:http://localhost:8090
+
