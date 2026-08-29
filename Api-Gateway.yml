@@ -1,32 +1,32 @@
 server:
   port: 8080
 
-eureka:
-  Client:
-    fetch-registry: true
-    register-with-eureka: true
-
-
 spring:
   application:
-    name: Api-Gateway
+    name: api-gateway
 
   cloud:
     gateway:
       server:
-        web flux:
+        webflux:
           routes:
-            - id: User-Service
-              uri: lb://User-Service
+
+            - id: user-service
+              uri: lb://user-service
               predicates:
                 - Path=/user/**
 
-            - id: Hotel-Service
-              uri: lb://Hotel-Service
+            - id: hotel-service
+              uri: lb://hotel-service
               predicates:
                 - Path=/hotel/**
 
-            - id: Rating-Service
-              uri: lb://Rating-Service
+            - id: rating-service
+              uri: lb://rating-service
               predicates:
                 - Path=/rating/**
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
