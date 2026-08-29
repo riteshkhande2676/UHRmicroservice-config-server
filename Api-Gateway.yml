@@ -1,15 +1,15 @@
 server:
-  port: 8088
-  
+  port: 8080
+
 eureka:
-   Client:
-     fetch-registry: true
-     register-with-eureka: true
+  Client:
+    fetch-registry: true
+    register-with-eureka: true
 
 
 spring:
   application:
-    name: API-GATEWAY
+    name: Api-Gateway
 
   cloud:
     gateway:
